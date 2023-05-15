@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": "./",
     "paths": {
-      "@shared/dto": ["./packages/shared/src/dto/index.ts"]
+      "@shared/dto": ["./packages/shared/src/dto/index.ts"],
+      "@shared/entities": ["./packages/shared/src/entities/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

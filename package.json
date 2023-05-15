@@ -6,6 +6,7 @@
     "build": "nx run-many --targets=build --all --parallel",
     "lint": "nx run-many --targets=lint --all --parallel",
     "test": "nx run-many --targets=test --all --parallel",
+    "serve": "nx run-many --targets=serve --all --parallel",
     "build:payment": "nx build payment-service",
     "build:auth": "nx build auth-service",
     "serve:payment": "nx serve payment-service",
