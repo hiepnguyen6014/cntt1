@@ -5,15 +5,7 @@
   "scripts": {
     "build": "nx run-many --targets=build --all --parallel",
     "lint": "nx run-many --targets=lint --all --parallel",
-    "test": "nx run-many --targets=test --all --parallel",
-    "serve": "nx run-many --targets=serve --all --parallel",
-    "build:payment": "nx build payment-service",
-    "build:auth": "nx build auth-service",
-    "serve:payment": "nx serve payment-service",
-    "serve:auth": "nx serve auth-service",
-    "test:payment": "nx test payment-service",
-    "test:auth": "nx test auth-service",
-    "graph": "nx graph"
+    "serve": "nx run-many --targets=serve --all --parallel"
   },
   "private": true,
   "dependencies": {
@@ -22,14 +14,19 @@
     "@nestjs/core": "^9.1.1",
     "@nestjs/mapped-types": "^1.2.2",
     "@nestjs/microservices": "^9.4.0",
+    "@nestjs/mongoose": "^9.2.2",
     "@nestjs/platform-express": "^9.1.1",
+    "@nestjs/typeorm": "^9.0.1",
     "axios": "^1.0.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
     "kafkajs": "^2.2.4",
+    "mongoose": "^7.1.1",
+    "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "typeorm": "^0.3.16"
   },
   "devDependencies": {
     "@nestjs/schematics": "^9.1.0",
